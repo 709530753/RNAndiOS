@@ -12,7 +12,7 @@
 
 ### 打开项目运行
 
-`cd ../ && open RNAndiOS.xcworkspace/`
+`cd ../ && open RNAndiOS.xcworkspace`
 
 ### 运行
 
