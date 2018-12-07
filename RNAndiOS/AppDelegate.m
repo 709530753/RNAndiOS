@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BaseNavController.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    // 初始化Nav
-    _nav = [[BaseNavController alloc]initWithRootViewController:[ViewController new]];
-    [_nav setNavigationBarHidden:NO animated:YES];
-    self.window.rootViewController = _nav;
+    self.window.rootViewController = [BaseNavController new];
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
+#import "NavSingleManager.h"
+#import "BaseNavController.h"
 
 @interface ViewController ()
 
@@ -21,7 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *pushButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [pushButton setTitle:@"点我去RN" forState:UIControlStateNormal];
+    [pushButton setTitle:@"点我去" forState:UIControlStateNormal];
     pushButton.frame = CGRectMake(100, 100, 100, 100);
     [pushButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [pushButton addTarget:self action:@selector(pushToRN) forControlEvents:UIControlEventTouchUpInside];
@@ -31,7 +33,7 @@
 
 - (void)pushToRN {
     SecondViewController *second = [[SecondViewController alloc] init];
-    [self.navigationController pushViewController:second animated:YES];
+    [[NavSingleManager shareInstance].navController pushViewController:second animated:YES];
 }
 
 @end

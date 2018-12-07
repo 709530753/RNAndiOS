@@ -1,0 +1,15 @@
+//
+//  RNAndiOS.pch
+//  RNAndiOS
+//
+//  Created by myxc on 2018/12/7.
+//  Copyright © 2018 myxc. All rights reserved.
+//
+
+#ifndef RNAndiOS_pch
+#define RNAndiOS_pch
+
+
+#define kBaseUrl @"http://172.21.6.181:8081"
+
+#endif /* RNAndiOS_pch */

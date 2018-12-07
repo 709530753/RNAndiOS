@@ -10,4 +10,6 @@
 
 @interface BaseNavController : UINavigationController
 
+- (instancetype)init;
+
 @end

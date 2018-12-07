@@ -22,7 +22,7 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/NextPage.bundle?platform=ios&dev=true"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:[NSString stringWithFormat:@"%@/NextPage.bundle?platform=ios&dev=true", kBaseUrl]];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"NextPage" initialProperties:nil launchOptions:nil];
     rootView.backgroundColor = [UIColor whiteColor];
     rootView.frame = CGRectMake(0, isIphoneX?88:64, KMainScreenW, isIphoneX?KMainScreenH-122:KMainScreenH-64);

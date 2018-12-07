@@ -7,6 +7,8 @@
 //
 
 #import "BaseNavController.h"
+#import "ViewController.h"
+#import "NavSingleManager.h"
 
 @interface BaseNavController ()
 
@@ -14,9 +16,13 @@
 
 @implementation BaseNavController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+       self = [[BaseNavController alloc]initWithRootViewController:[ViewController new]];
+        [[NavSingleManager shareInstance] setNavController:self];
+    }
+    return self;
 }
 
 @end
