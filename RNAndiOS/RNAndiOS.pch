@@ -9,7 +9,14 @@
 #ifndef RNAndiOS_pch
 #define RNAndiOS_pch
 
+#define kBaseUrl @"http://172.21.12.63:8081"
 
-#define kBaseUrl @"http://172.21.6.181:8081"
+#define DEBUG_NETWORK
+
+#ifdef DEBUG_NETWORK
+
+#else defined RELEASE_NETWORK
+
+#endif
 
 #endif /* RNAndiOS_pch */

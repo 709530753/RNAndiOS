@@ -16,10 +16,12 @@
 		5211B2C921B5259A0026155C /* RNAndiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5211B2C821B5259A0026155C /* RNAndiOSTests.m */; };
 		5211B2D421B5259B0026155C /* RNAndiOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5211B2D321B5259B0026155C /* RNAndiOSUITests.m */; };
 		5211B2E321B52DE70026155C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5211B2E221B52DE70026155C /* SecondViewController.m */; };
+		52744AD121BC010400CA1A3A /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52744AD021BC010400CA1A3A /* bundle */; };
 		52779C8221B62E4E00AA32AF /* RNJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 52779C8121B62E4E00AA32AF /* RNJSBridge.m */; };
 		52779C8521B6304100AA32AF /* NextPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52779C8421B6304100AA32AF /* NextPageController.m */; };
 		52779C8821B64B9200AA32AF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52779C8721B64B9200AA32AF /* ThirdViewController.m */; };
 		52BD6E0321B90FC000340362 /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6E0221B90FC000340362 /* BaseNavController.m */; };
+		52D7570721BA24DA006532EA /* NavSingleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52D7570621BA24DA006532EA /* NavSingleManager.m */; };
 		B91574423471D123C8BFFE93 /* libPods-RNAndiOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B81D906C09130176FE7C320 /* libPods-RNAndiOSTests.a */; };
 		C8D16E2E08052153FA962B16 /* libPods-RNAndiOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E193C26A7EBA6C05ECBD448 /* libPods-RNAndiOSUITests.a */; };
 		F02BC699BBA4904C96891978 /* libPods-RNAndiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 702588908845C7F9DE7FF98D /* libPods-RNAndiOS.a */; };
@@ -62,6 +64,7 @@
 		5211B2D521B5259B0026155C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5211B2E121B52DE70026155C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5211B2E221B52DE70026155C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		52744AD021BC010400CA1A3A /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = SOURCE_ROOT; };
 		52779C8021B62E4E00AA32AF /* RNJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNJSBridge.h; sourceTree = "<group>"; };
 		52779C8121B62E4E00AA32AF /* RNJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNJSBridge.m; sourceTree = "<group>"; };
 		52779C8321B6304100AA32AF /* NextPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextPageController.h; sourceTree = "<group>"; };
@@ -70,6 +73,9 @@
 		52779C8721B64B9200AA32AF /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		52BD6E0121B90FC000340362 /* BaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
 		52BD6E0221B90FC000340362 /* BaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
+		52D7570521BA24DA006532EA /* NavSingleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavSingleManager.h; sourceTree = "<group>"; };
+		52D7570621BA24DA006532EA /* NavSingleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavSingleManager.m; sourceTree = "<group>"; };
+		52D7570821BA4D53006532EA /* RNAndiOS.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAndiOS.pch; sourceTree = "<group>"; };
 		68FC5DB481539C78B7663011 /* Pods-RNAndiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAndiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNAndiOSTests/Pods-RNAndiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B81D906C09130176FE7C320 /* libPods-RNAndiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAndiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702588908845C7F9DE7FF98D /* libPods-RNAndiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAndiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,12 +162,15 @@
 		5211B2AE21B525990026155C /* RNAndiOS */ = {
 			isa = PBXGroup;
 			children = (
+				52744AD021BC010400CA1A3A /* bundle */,
 				5211B2AF21B525990026155C /* AppDelegate.h */,
 				5211B2B021B525990026155C /* AppDelegate.m */,
 				5211B2B221B525990026155C /* ViewController.h */,
 				5211B2B321B5259A0026155C /* ViewController.m */,
 				52BD6E0121B90FC000340362 /* BaseNavController.h */,
 				52BD6E0221B90FC000340362 /* BaseNavController.m */,
+				52D7570521BA24DA006532EA /* NavSingleManager.h */,
+				52D7570621BA24DA006532EA /* NavSingleManager.m */,
 				5211B2E121B52DE70026155C /* SecondViewController.h */,
 				5211B2E221B52DE70026155C /* SecondViewController.m */,
 				52779C8621B64B9200AA32AF /* ThirdViewController.h */,
@@ -170,6 +179,7 @@
 				52779C8421B6304100AA32AF /* NextPageController.m */,
 				52779C8021B62E4E00AA32AF /* RNJSBridge.h */,
 				52779C8121B62E4E00AA32AF /* RNJSBridge.m */,
+				52D7570821BA4D53006532EA /* RNAndiOS.pch */,
 				5211B2B521B5259A0026155C /* Main.storyboard */,
 				5211B2B821B5259A0026155C /* Assets.xcassets */,
 				5211B2BA21B5259A0026155C /* LaunchScreen.storyboard */,
@@ -303,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52744AD121BC010400CA1A3A /* bundle in Resources */,
 				5211B2BC21B5259A0026155C /* LaunchScreen.storyboard in Resources */,
 				5211B2B921B5259A0026155C /* Assets.xcassets in Resources */,
 				5211B2B721B5259A0026155C /* Main.storyboard in Resources */,
@@ -395,6 +406,7 @@
 				5211B2B121B525990026155C /* AppDelegate.m in Sources */,
 				52779C8521B6304100AA32AF /* NextPageController.m in Sources */,
 				52779C8821B64B9200AA32AF /* ThirdViewController.m in Sources */,
+				52D7570721BA24DA006532EA /* NavSingleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +578,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 624GNXSRA2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RNAndiOS/RNAndiOS.pch";
 				INFOPLIST_FILE = RNAndiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +598,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 624GNXSRA2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RNAndiOS/RNAndiOS.pch";
 				INFOPLIST_FILE = RNAndiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

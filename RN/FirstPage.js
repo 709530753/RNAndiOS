@@ -20,7 +20,7 @@ export default class FirstPage extends Component {
         return(
             <View style={styles.container}>
                 <TouchableOpacity onPress={()=>this._jumpNextPage()}>
-                    <Text style={styles.textStyle}>呵呵呵呵呵呵呵</Text>
+                    <Text style={styles.textStyle}>RKNTLNBTYUIBNLTUIYHBTUI</Text>
 
                 </TouchableOpacity>
             </View>
